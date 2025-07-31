@@ -1,0 +1,12 @@
+# Compiled executables
+*.exe
+*.out
+*.o
+
+# Editor/IDE folders
+.vscode/
+.idea/
+
+# Input/Output files
+in.txt
+out.txt
