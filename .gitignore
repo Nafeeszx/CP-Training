@@ -5,7 +5,6 @@
 
 # Editor/IDE folders
 .vscode/
-.idea/
 
 # Input/Output files
 in.txt
