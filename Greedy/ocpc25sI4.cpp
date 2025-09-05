@@ -17,9 +17,21 @@ const ll mod = 1e9 + 7;
 int main() 
 {	
     ios_base::sync_with_stdio(0); cin.tie(0);
-    int t; cin >> t;
-    while(t--) {
-        
+    int n; cin >> n;
+    ll ans = 0, open = 0;
+    F0R(i, n) {
+        int u;
+        cin >> u;
+
+        int mn = (u+1)/2, mx = u;
+        if(open > mx) {
+            open = mx;
+        }
+        else if(open < mn) {
+            ans += mn-open;
+            open = mn;
+        }
     }    
+    cout << ans;
     return 0;
 }   

@@ -19,20 +19,7 @@ int main()
     ios_base::sync_with_stdio(0); cin.tie(0);
     int t; cin >> t;
     while(t--) {
-        int n; cin >> n;
-        ll px, py, qx, qy;
-        cin >> px >> py >> qx >> qy;
-        ll dist = (px-qx)*1LL*(px-qx) + (py-qy)*1LL*(py-qy);
-        ll sm = 0, mx = 0;
-        F0R(i, n) {
-            ll k; cin >> k;
-            sm += k;
-            mx = max(mx, k);
-        }
-        ll maxx = sm, minn = max(0LL, 2*mx-sm);
-        maxx *= maxx;
-        minn *= minn;
-        cout << (minn <= dist && dist <= maxx ? "Yes" : "No") << "\n";
+        
     }    
     return 0;
 }   

@@ -19,27 +19,7 @@ int main()
     ios_base::sync_with_stdio(0); cin.tie(0);
     int t; cin >> t;
     while(t--) {
-        ll n, l, r, k; cin >> n >> l >> r >> k;
-        if(n&1) {
-            cout << l << "\n";
-            continue;
-        }
-        if(n==2) {
-            cout << -1 << "\n";
-            continue;
-        }
-        ll p = __lg(l)+1;
-        p = (1LL<<p);
-        if(p > r) {
-            cout << -1 << "\n";
-            continue;
-        }
-        if(k >= n-1) {
-            cout << p << "\n";
-        }
-        else {
-            cout << l << "\n";
-        }
+        
     }
     return 0;
 }   
